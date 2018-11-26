@@ -1,0 +1,37 @@
+/* Google fonts (Roboto, PT-Serif, Bree Serif) */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:700|Roboto:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif:400,700');
+body{
+    height: 100%;
+    padding:0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    height: auto;
+    width: 30%;
+    margin:auto;
+}
+
+.bannar{
+    background: rgb(158, 55, 55);
+    height: 90px;
+}
+
+.display_flex{
+    display:flex;
+   
+}
+.flex_1{
+    flex:1;
+    width:40%;
+}
+.flex_2{
+    flex:2;
+    width:50%
+}
+.img_responsive{
+    width:100%;
+    height:auto;
+}
