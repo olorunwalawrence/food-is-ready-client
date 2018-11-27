@@ -40,7 +40,11 @@ button {
     margin-left:20%;
     border-radius: 20px;
     color:white;
+<<<<<<< HEAD
     background: rgb(180, 34, 34);
+=======
+    background:green;
+>>>>>>> gh-pages
     font-weight: bold;
 }
 a{
