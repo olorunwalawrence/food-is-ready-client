@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./asset/css/module/main.css" />
+
+</head>
+
+<body>
+    <div class="wrappers">
+        <div class="left">
+            <div class="title">
+                <h1>food is ready</h1>
+
+                <div class="img">
+                    <img src="./asset/images/food1.jpg" alt="" srcset="" class="logo">
+                </div>
+
+                <div class="logout">
+                    <p>logout</p> 
+                </div> 
+            </div>
+            
+            <div class="nav">
+                        <ul>
+                            <li><a href="adminDashboard.html">Dashboard</a></li>
+                            <li><a href="">meal</a></li>
+                            <li><a href="">menu</a></li>
+                            <li><a href="">orders</a></li>
+                        </ul>
+                </div>
+            </div>
+
+
+            <div class="rights">
+                <div id="add">Add a meal</div>
+
+                <div class="backdrop" id="bkdrp"></div>
+                <div id="form">
+                    <form class="modal-content">
+                        <label for="name">Meal Name</label>
+
+                        <input type="text" name="mealname" id="mealname">
+
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price">
+
+                        <label for="meal-image"> Meal Image</label>
+
+
+                        <div class="mealimage" id="mealimage">
+
+                            <img src="../UI/asset/images/food4.jpg" alt="" srcset="" id="imgs">
+                        </div>
+                        <input type="file" name="image" id="file">
+
+                        <label for="description"> Description</label>
+                        <input type="text" name="description" class="mod" id="description">
+
+                        <button type="button" class="add" id="addmeal">Add meal</button>
+                        <button type="button" id="close"> close</button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="right" id="right"></div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <script src="./asset/js/modal.js"></script>
+        <script src="./asset/js/addmeal.js"></script>
+
+
+
+
+
+</body>
+
+</html>

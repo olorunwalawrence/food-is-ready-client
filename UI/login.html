@@ -7,7 +7,11 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./asset/css/module/main.css" />
-
+    <script>
+    //  if (localStorage.getItem('token')) {
+    //     location = 'userDashBoard.html'
+    // }
+    </script>
 </head>
 
 <body>
@@ -30,15 +34,13 @@
                 <div class="form">
                     <form action="">
 
-                        <input type="text" name="username" placeholder="username">
+                        <input type="text" id="email" name="email" placeholder="email">
 
-                        <input type="text" name="email" placeholder="email">
+                        <input type="password" id="pword"  name="password" placeholder="password">
 
-                        <input type="password" name="password" placeholder="password">
+                        <!-- <input type="password" name="confirm-password" placeholder="confirm password"> -->
 
-                        <input type="password" name="confirm-password" placeholder="confirm password">
-
-                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="login">Login</button>
                         <a href="signup.html"> not yet a user</a>
                     </form>
                 </div>
@@ -49,7 +51,7 @@
     </div>
 
 
-    <script src="./asset/js/main.js">
+    <script src="./asset/js/login.js">
     </script>
 </body>
 
