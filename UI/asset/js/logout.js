@@ -1,7 +1,14 @@
 const logout = document.querySelector('#logout');
 
+
+const url = "http://localhost:5000/allorderedmeal";
+
+// ######################
+// display all ordered meal
+
+
 const user = {
-  
+
   logoutUser() {
     window.localStorage.removeItem('token');
     window.localStorage.removeItem('username');
@@ -22,3 +29,12 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+/*
+====================================
+CLOSE MODAL FUNCTION
+
+==================================== */
+
+
+

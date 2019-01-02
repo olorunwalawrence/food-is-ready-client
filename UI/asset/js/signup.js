@@ -29,16 +29,15 @@ function fetchSignup(e) {
         },
 
         body: JSON.stringify(data)
-    }
-    ).then(res => res.json())
+    }).then(res => res.json())
         .then(response => {
-            // console.log(response.user.email)
+            console.log(response.user.email)
             if(response.user.email =='olorunwalawrence5@gmail.com'){
                 localStorage.setItem('token', `${response.user.token}`);
                 location = 'adminDashboard.html'
               }else{
                 localStorage.setItem('token', `${response.user.token}`);
-                location = 'userDashboard.html'
+                location = 'menu.html'
               }
           
        

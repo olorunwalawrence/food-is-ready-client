@@ -19,14 +19,14 @@
                     <h1>food is ready</h1>
                 </div>
                 <div class="topnav" id="myTopnav">
-                     
-                        <a id="logout">Logout</a>
-                        <a href="order.html">order </a>
 
-                        <a href="menu.html"><span>m</span>enu</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                            </a>
+                    <a id="logout">Logout</a>
+                    <a href="order.html">order </a>
+
+                    <a href="menu.html"><span>m</span>enu</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
 
                 </div>
             </div>
@@ -37,19 +37,56 @@
 
         </header>
 
-        <div id="allcards">
-           
-        </div>
+        <section>
+
+            <div id="allcards">
+
+            </div>
+            <div class="wrap">
+                <h3>my carts</h3>
+                <div id="requestTable">
+
+                </div>
+                <div id="myModal" class="modals">
+
+                    <!-- Modal content -->
+                    <div class="modals-content" >
+                        <span class="close">&times;</span>
+                        <p style="color:white">Order form</p>
+                        <form id="ordered">
+
+                            <input type="text" id="fullname" placeholder="full name">
+                            <input type="text" id="email" placeholder="email">
+                            <input type="text" id="phone" placeholder="phone number">
+                            <input type="text" id="address" placeholder="address">
+                            <input type="text" id="bstop" placeholder="neaarest bus-stop">
+                            <input type="text" id="lga" placeholder="LGA">
+
+                            <button type="submit" id="orderbtn" class ="orderbtns" >create order</button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+                <p id="placeOrder">click <span>Here</span> to place your order</p>
+            </div>
+
+        </section>
 
 
-<footer>
-    <div class="foot">copy right @ food is ready designed by olorunwa lawrence</div>
-</footer>
+
+        <footer>
+            <div class="foot">copy right @ food is ready designed by olorunwa lawrence</div>
+        </footer>
 
     </div>
     <script src="../UI/asset/js/displaymeal.js"></script>
+    <script src="../UI/asset/js/request.js"></script>
     <script src="../UI/asset/js/logout.js">
-    </script>
+     </script>
+    
+
 
 </body>
 

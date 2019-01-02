@@ -14,8 +14,8 @@ function displaymodal(e){
 
 
 
-function closeModal(e){
-    e.preventDefault();
+function closeModal(){
+
     document.getElementById("form").style.display = "none";
     document.getElementById('bkdrp').style.display="none";
 };
@@ -45,6 +45,4 @@ let uploadedFile = document.querySelector('input[type="file"]');
 
 uploadedFile.addEventListener('change', previewFile);
 
-
-// 
 

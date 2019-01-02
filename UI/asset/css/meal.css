@@ -7,11 +7,30 @@
     padding-top:14px;
     transform: translate(350px,100px) 
 }
+.add{
+    background: green;
+    width: 100px;
+    height:40px;
+    color:white;
+    text-align: center;
+    padding-top:6px;
+    transform: translate(350px,100px) 
+}
+
+#close{
+    background: red;
+    width: 100px;
+    height:40px;
+    color:white;
+    text-align: center;
+    padding-top:6px;
+    transform: translate(350px,100px) 
+}
 
 .right{
   display: flex;
   /* border-left:1px solid red; */
-  margin-top: 150px;
+  /* margin-top: 150px; */
 
 }
 .card{

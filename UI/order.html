@@ -13,41 +13,60 @@
 
 <body>
     <div class="wrapper">
+        <button type="submit" id="orderbtn" style="display: none">create order</button>
         <header>
             <div class="bannar">
                 <div class="signup-logo">
                     <h1>food is ready</h1>
                 </div>
                 <div class="topnav" id="myTopnav">
-                     
-                        <a id="logout">Logout</a>
-                        <a href="order.html"><span>o</span>rder </a>
 
-                        <a href="menu.html">menu</a>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars"></i>
-                            </a>
+                    <a id="logout">Logout</a>
+                    <a href="order.html"><span>o</span>rder </a>
+
+                    <a href="menu.html">menu</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
 
                 </div>
             </div>
 
             <div class="banner ">
-               
+
             </div>
 
         </header>
-        <h2>Ordered List</h2> 
-            <div class="allcard">
-               dmnd
+        <h2>Ordered List</h2>
+
+        <div id="requestResult">
+          
+                <div class="requester">
+                
+                </div>
+                <div id="ordercard">
+
             </div>
-     
+        </div>
+
+        <h5>total</h5>
+        <div id="total">
+
+        </div>
+
+
     </div>
 
 
-    
+
     <script src="../UI/asset/js/logout.js">
     </script>
- 
+    <script src="../UI/asset/js/order.js">
+    </script>
+
+
+
+
 </body>
 
 </html>
