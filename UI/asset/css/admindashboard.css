@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%
+}
+.wrappers {
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    grid-auto-rows: minmax(100px, auto);
+    height: 100%;
+}
+.title{
+    height: 250px;
+}
+
+h1{
+    margin: px;
+    padding-left:60px;
+    color:teal;
+}
+.left{
+    
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin:auto 60px;
+    /* padding-left:30px; */
+   
+}
+.nav ul {
+    margin:0;
+    padding:0;
+}
+.price {
+    color: grey;
+    font-size: 22px;
+  } 
+.nav ul li{
+    margin-top:30px;
+    text-align: center;
+}
+
+.nav ul li a{
+  color:rgb(59, 57, 57); 
+  font-weight: bolder;
+}
+
+.nav ul li a:hover{
+    color:gray;
+}
+.cards{
+    width:300px;
+    height: 150px;
+    margin-bottom:10px;
+    margin-left:20px;
+}
+
+table, th, td {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+  }
+  th {
+    text-align: left;
+    padding-top:15px;
+  }
+
+  .result{
+      display: grid;
+      grid-template-columns: repeat(2,1fr)
+  }
+
+
