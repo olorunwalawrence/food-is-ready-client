@@ -42,7 +42,7 @@ fetch(orderDataUrl, {
     FETCH REQUESTed MEALS BY USER ID 
     USER
    ================================= */
-   const requestedMeal = `http://localhost:5000/requestedmeals`;
+   const requestedMeal = `https://food-is-ready.herokuapp.com/requestedmeals`;
 
   fetch(requestedMeal, {
     method: "GET",

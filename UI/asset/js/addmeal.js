@@ -17,7 +17,8 @@ function fetchmeal(e) {
         description: description.value
     }
 
-    const url = "https://food-is-ready.herokuapp.com/createmeal";
+    // const url = "https://food-is-ready.herokuapp.com/createmeal";
+    const url = "http://localhost:5000/createmeal"
 
     fetch(url, {
         method: 'POST',
@@ -31,7 +32,6 @@ function fetchmeal(e) {
     ).then(res => res.json())
         .then((response) => {
             console.log(response);
-            // location = 'meal.html'
         }).catch(err => console.log(err.message))
     
 }

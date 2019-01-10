@@ -6,16 +6,16 @@ let clbtn = document.getElementById('close');
 clbtn.addEventListener('click', closeModal );
 
 
-function displaymodal(e){
-    e.preventDefault();
+function displaymodal(){
+    // e.preventDefault();
     document.getElementById("form").style.display = "block";
     document.getElementById('bkdrp').style.display="block";
 }
 
 
 
-function closeModal(e){
-    e.preventDefault();
+function closeModal(){
+    // e.preventDefault();
     document.getElementById("form").style.display = "none";
     document.getElementById('bkdrp').style.display="none";
 };

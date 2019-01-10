@@ -17,7 +17,8 @@ fetch(mealUrl, {
     }
 }).then(res => res.json())
     .then((meal) => {
-    
+        
+        
         let allMeal = "";
         meal.map(meals => {
            
@@ -47,13 +48,7 @@ function addtocart (self, id) {
   
     const getData = self.getAttribute('data')
     const requestData = JSON.parse(getData);
-    // console.log(requestData)
-    
-    
-    // const data = {
-    //     mealname:requestData.mealname,
-    //     price: requestData.price,
-    // }
+   
 
 const addtocart = `https://food-is-ready.herokuapp.com/getameal/${id}`;
 
@@ -66,7 +61,7 @@ fetch(addtocart, {
 }).then(res => res.json())
     .then(response => {
         console.log(response)
-        // let result = response.meal[0];
+      
         document.location.reload();      
     })   
 } 

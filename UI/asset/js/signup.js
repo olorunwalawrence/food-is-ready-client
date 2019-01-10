@@ -1,5 +1,6 @@
 let sbtn = document.querySelector('.btn');
 sbtn.addEventListener('click', fetchSignup);
+const error = document.querySelector('.error');
 
 function fetchSignup(e) {
     e.preventDefault();
@@ -20,7 +21,8 @@ function fetchSignup(e) {
     }
 
 
-    const url = "https://food-is-ready.herokuapp.com/signup";
+    // const url = "https://food-is-ready.herokuapp.com/signup";
+    const url = "http://localhost:5000/signup";
 
     fetch(url, {
         method: 'POST',
@@ -31,6 +33,7 @@ function fetchSignup(e) {
         body: JSON.stringify(data)
     }).then(res => res.json())
         .then(response => {
+            error.textContent = response.message;
             console.log(response.user.email)
             if(response.user.email =='olorunwalawrence5@gmail.com'){
                 localStorage.setItem('token', `${response.user.token}`);
@@ -41,5 +44,7 @@ function fetchSignup(e) {
               }
           
        
-        }).catch(err => console.log(err))
+        }).catch((err) =>{
+           
+        })
 }

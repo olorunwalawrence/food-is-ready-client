@@ -12,7 +12,7 @@ const requestedmeal = () => {
   })
     .then(res => res.json())
     .then(result => {
-      console.log(result);
+    
       let allMeal = "";
       result.map(req => {
         allMeal += `
@@ -20,9 +20,7 @@ const requestedmeal = () => {
             <div class="containers">
            
            <p id="para"> ${req.mealname}: ${req.price}</p> 
-           <a onClick ='deleteRequest(${
-             req.requestid
-           })' class="cancel">cancel request</a>     
+           <a onClick ='deleteRequest(${ req.requestid })' class="cancel">cancel request</a>     
             </div> 
            
           </div>
@@ -85,7 +83,7 @@ WHEN A USER CLICK THE ORDERBTN CLOSE THE MODDAL ALSO
 ====================================================
 */
 const orderbtns = document.querySelector(".orderbtns");
-console.log(orderbtns)
+
 orderbtns.onclick = function(){
   modal.style.display = "none";
 };
