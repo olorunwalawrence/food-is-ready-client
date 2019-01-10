@@ -21,8 +21,8 @@ function fetchSignup(e) {
     }
 
 
-    // const url = "https://food-is-ready.herokuapp.com/signup";
-    const url = "http://localhost:5000/signup";
+    const url = "https://food-is-ready.herokuapp.com/signup";
+    // const url = "http://localhost:5000/signup";
 
     fetch(url, {
         method: 'POST',
