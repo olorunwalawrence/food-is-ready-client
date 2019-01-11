@@ -1,7 +1,11 @@
 let btn = document.getElementById('addmeal');
 btn.addEventListener('click', fetchmeal);
 
-
+/*
+====================================================
+ADMIN ADD MEAL FUNCTIONALITY
+====================================================
+*/
 function fetchmeal(e) {
     e.preventDefault();
 
@@ -17,13 +21,14 @@ function fetchmeal(e) {
         description: description.value
     }
 
-    // const url = "https://food-is-ready.herokuapp.com/createmeal";
-    const url = "http://localhost:5000/createmeal"
+    const url = "https://food-is-ready.herokuapp.com/createmeal";
+   
 
     fetch(url, {
         method: 'POST',
         headers: {
-            "content-type": "application/json"
+            "content-type": "application/json",
+            "x-access-token": `${localStorage.getItem("token")}`
             
         },
 

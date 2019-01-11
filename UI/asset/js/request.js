@@ -2,6 +2,11 @@ const requestedUrl = 'https://food-is-ready.herokuapp.com/requestedmeal';
 const modal = document.getElementById("myModal");
 const foodOrder = document.getElementById("placeOrder");
 
+/*
+====================================================
+  CART FUNCTIONALITY
+====================================================
+*/
 const requestedmeal = () => {
   fetch(requestedUrl, {
     method: "GET",
@@ -40,7 +45,7 @@ DELETE A MEAL REQUEST
 */
 
 const deleteRequest = requestid => {
-  const deleteUrl = `http://localhost:5000/deleterequested/${requestid}`;
+  const deleteUrl = `https://food-is-ready.herokuapp.com/deleterequested/${requestid}`;
   fetch(deleteUrl, {
     method: "DELETE",
     headers: {
@@ -79,7 +84,7 @@ span.onclick = function() {
 
 /*
 ====================================================
-WHEN A USER CLICK THE ORDERBTN CLOSE THE MODDAL ALSO
+WHEN A USER CLICK THE ORDERBTNS CLOSE THE MODDAL ALSO
 ====================================================
 */
 const orderbtns = document.querySelector(".orderbtns");

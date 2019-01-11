@@ -8,7 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./asset/css/module/main.css" />
-  
+    <script>
+    if (!localStorage.getItem('token')) {
+           location = 'login.html'
+       }
+       </script>
 </head>
 
 <body>
@@ -53,7 +57,7 @@
                         <span class="close">&times;</span>
                         <p style="color:white">Order form</p>
                         <form id="ordered">
-
+                            <div class="error"></div>
                             <input type="text" id="fullname" placeholder="full name">
                             <input type="text" id="email" placeholder="email">
                             <input type="text" id="phone" placeholder="phone number">
@@ -61,7 +65,7 @@
                             <input type="text" id="bstop" placeholder="neaarest bus-stop">
                             <input type="text" id="lga" placeholder="LGA">
 
-                            <button type="submit" id="orderbtn" class ="orderbtns" >create order</button>
+                            <button type="submit" id="orderbtn" class="orderbtns" >create order</button>
 
                         </form>
 

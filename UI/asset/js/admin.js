@@ -1,5 +1,5 @@
 const orderDataUrl = "https://food-is-ready.herokuapp.com/alluserorder";
-
+let error = document.querySelector('.error')
 const orderhistorys = document.querySelector('.orderhistorys');
 const requestedMealTable = document.querySelector('.meals');
 
@@ -11,7 +11,7 @@ fetch(orderDataUrl, {
   },
 }).then(res => res.json())
   .then(data => {
-    (data)
+
     console.log(data)
     let output = "";
     data.map(datas  => {

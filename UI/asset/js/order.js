@@ -1,6 +1,10 @@
 
 
-// send all ordered meal for display
+/*
+====================================================
+SEND ALL ORDERED MEAL FOR DISPLAY
+====================================================
+*/
 
 const sendallmeal = `https://food-is-ready.herokuapp.com/requestedmeal`;
 
@@ -37,14 +41,11 @@ fetch(sendallmeal, {
 
     })
 
-
-    // quantity increment button
-    function myFunction() {
-        document.getElementById("number").stepUp();
-      }
-
-
-// display data of the person that made orders
+/*
+====================================================
+DISPLAY THE DATA OF THE USER THAT MADE THE OEDER
+====================================================
+*/
 
 const orderDataUrl = `https://food-is-ready.herokuapp.com/userorder`;
 

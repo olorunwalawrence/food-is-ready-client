@@ -7,11 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"  type="text/css"  media="screen" href="./asset/css/module/main.css"   />
-      <script>
-        if (localStorage.getItem('token')) {
-           location = 'menu.html'
-       }
-       </script>
+      if (!localStorage.getItem('token')) {
+        location = 'login.html'
+    }
   </head>
 
   <body>
@@ -39,6 +37,7 @@
 
         <div class="backdrop" id="bkdrp"></div>
         <div id="form">
+        
           <form class="modal-content" id="myForm">
             <label for="name">Meal Name</label>
 

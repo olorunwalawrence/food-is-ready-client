@@ -10,7 +10,6 @@ function fetchSignup(e) {
     let uname = document.getElementById('uname');
     let email = document.getElementById('email');
     let password = document.getElementById('pword');
-    // let  consfirm-password= document.getElementById('cpword');
 
     const data = {
         firstname: fname.value,
@@ -22,7 +21,6 @@ function fetchSignup(e) {
 
 
     const url = "https://food-is-ready.herokuapp.com/signup";
-    // const url = "http://localhost:5000/signup";
 
     fetch(url, {
         method: 'POST',

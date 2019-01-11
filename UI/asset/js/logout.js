@@ -1,12 +1,5 @@
 const logout = document.querySelector('#logout');
 
-
-// const url = "http://localhost:5000/allorderedmeal";
-
-// ######################
-// display all ordered meal
-
-
 const user = {
 
   logoutUser() {
@@ -19,8 +12,11 @@ const user = {
 
 logout.addEventListener('click', user.logoutUser);
 
-
-// responsive navigation function
+/*
+====================================================
+          RESPONSIVE FUNCTIONALITY
+====================================================
+*/
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -30,29 +26,6 @@ function myFunction() {
   }
 }
 
-
-//get the names of the customer that made order for meal functionality
-
-// fetch(url, {
-//   method: "GET",
-//   headers: {
-//     "content-type": "application/json",
-//     "x-access-token": `${localStorage.getItem("token")}`
-//   }
-// }).then(res => res.json())
-//   .then(orderedmeals => {
-//     let result = "";
-//     orderedmeals.map(ordered => {
-//       result = `
-//             <div id="result">${ordered.fullname}</div>
-//             <div id="result">2</div>
-//             <div id="result">3</div>
-//   `;
-
-  
-//     })
-//     console.log(orderedmeals)
-//   })
 
 
 
